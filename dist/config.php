@@ -28,14 +28,14 @@ if (ENV === 'DEV')
 	ini_set("display_errors", 1);
 
     /* Define base url */
-    define('BASEURL', 'http://localhost/template-highway/docs/');
+    define('BASEURL', 'http://localhost/template-highway/dist/');
 	define('ASSETSURL', 'http://localhost/template-highway/');
-    define('SITE_ROOT', 'http://localhost/template-highway/docs');
+    define('SITE_ROOT', 'http://localhost/template-highway/dist');
     // define('ROOT_PATH', _DIR_.'/');
 }else {
     /* Define base url */
-    define('BASEURL', 'http://localhost/template-highway/docs');
+    define('BASEURL', 'http://localhost/template-highway/dist');
 	define('ASSETSURL', 'http://localhost/template-highway/');
-    define('SITE_ROOT', 'http://localhost/template-highway/docs');
+    define('SITE_ROOT', 'http://localhost/template-highway/dist');
     // define('ROOT_PATH', _DIR_.'/');
 }

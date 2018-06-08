@@ -14,12 +14,12 @@ if (ENV === 'DEV')
 	ini_set("display_errors", 1);
 
     /* Define base url */
-    define('URL', 'http://localhost/template-highway/docs/');
+    define('URL', 'http://localhost/template-highway/dist/');
 	define('ASSETS_URL', 'http://localhost/template-highway/');
     // define('ROOT_PATH', _DIR_.'/');
 }else {
     /* Define base url */
-    define('URL', 'http://localhost/template-highway/docs');
+    define('URL', 'http://localhost/template-highway/dist');
 	define('ASSETS_URL', 'http://localhost/template-highway/');
     // define('ROOT_PATH', _DIR_.'/');
 }

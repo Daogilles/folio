@@ -18,7 +18,7 @@ module.exports = {
         main: ['babel-polyfill', path.resolve(__dirname, 'src/styles/main.scss') ,path.resolve(__dirname, 'src/index.js')]
     },
     output: {
-        path: path.resolve(__dirname, 'docs'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js'
     },
     resolve: {
