@@ -34,7 +34,7 @@ require_once('./config.php');
 
     	<link rel="author" href="/humans.txt">
 
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,400,500,600|Oswald:300,400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Oswald:300,400,700|Libre+Baskerville:400,700" rel="stylesheet">
         <!-- <link rel="stylesheet" href="main.css"> -->
     </head>
     <body id="page-home">
@@ -120,7 +120,9 @@ require_once('./config.php');
             			</div>
             			<div class="slide msf">
             				<a href="<?php echo BASEURL; ?>projects/msf" class="slide__content">
-            					<div class="slide__title">MSF</div>
+            					<div class="slide__title">
+                                    <img src="<?php echo ASSETSURL; ?>assets/images/msf-logo2.svg" alt="Médecin sans frontières Logo">
+                                </div>
                                 <div class="msf__morph morph-wrap">
                     				<svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
                                         <clipPath id="msf__svg">

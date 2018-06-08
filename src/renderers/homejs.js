@@ -287,9 +287,11 @@ export default class HomeJs {
     }
 
     onScroll(event) {
+
     	event = event.originalEvent;
         // console.log('onscroll')
-    	if (event.type == 'keydown') {
+        let open = true;
+    	if (event.type == 'keydown' && !open) {
     		// let down = event.keyCode == 37,
         	// 	up   = event.keyCode == 39,
         	// 	esc  = event.keyCode == 27;
@@ -309,7 +311,7 @@ export default class HomeJs {
     		}
     	}
 
-    	if (event.type == 'wheel' || event.type == 'scroll') {
+    	if ( (event.type == 'wheel' || event.type == 'scroll')  && !open) {
     		event.stopPropagation();
     		event.preventDefault();
 

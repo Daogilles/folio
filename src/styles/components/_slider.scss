@@ -74,6 +74,7 @@
 		width: 100%;
 		z-index: 1;
 		white-space: normal;
+		max-width: 1024px;
 	}
 
 	img {
@@ -107,14 +108,21 @@
 		line-height: 1;
 		position: absolute;
 		top: 10%;
-		left: 60%;
+		// left: 60%;
 		opacity: 0;
 		text-align: left;
 		// transition: opacity .7s cubic-bezier(.190, 1.000, .220, 1.000), left 2s cubic-bezier(.190, 1.000, .220, 1.000);
 		// transform: translate3d(-30%, 0, 0);
 
 		width: 100%;
+		max-width: 740px;
 		z-index: 2;
+
+		img {
+			margin: 0;
+			max-width: calc(100% - 10%);
+		}
+
 	}
 
 	&.active {

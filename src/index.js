@@ -40,29 +40,38 @@ import Layer from './transitions/layer';
         }
     });
 
-    TweenMax.set(document.querySelector('.main'), { opacity: 0 });
-    console.log('isSsr '+window.isSsr)
+    var main = document.querySelector('.main');
+    TweenMax.set(main, { opacity: 0 });
     // fix
     if(window.isSsr) {
-        console.log('inner isSsr')
-        // body.classList.add('gray');
         TweenMax.fromTo(document.querySelector('body'), 0.4,
-            { alpha: 0 },
-            {
-                alpha: 1
-            }
+            { alpha: 0 },{alpha: 1}
         );
-        TweenMax.fromTo(document.querySelector('.main'), 0.6,
-            { alpha: 0 },
-            {
-                alpha: 1
-            }
+        TweenMax.fromTo(main, 0.6,
+            { alpha: 0 },{ alpha: 1 }
         );
     }
 
+    document.querySelector('#menu').addEventListener('click', (e) => {
+        console.log(e.currentTarget)
+        document.querySelector('body').classList.add('disable-scroll');
+        TweenMax.set(document.querySelector('.blur'), { zIndex: 9999 });
+        TweenMax.to(document.querySelector('.blur'), 0.5, {
+            // zIndex: 99999,
+            opacity: 1,
+            scale: 7,
+            webkitFilter:"blur(0px)",
+            ease: Quad.easeIn
+        })
+        TweenMax.to(main, 0.6, {
+            scale: 0.9,
+            ease: Quad.easeIn
+        })
+    })
+
     H.on('NAVIGATE_IN', (to, state) => {
         // console.log("H NAVIGATE_IN")
-        TweenMax.set(document.querySelector('.main'), { clearProps: "all" });
+        TweenMax.set(main, { clearProps: "all" });
         window.isSsr = false;
         document.querySelector('body').removeAttribute("id");
     });
