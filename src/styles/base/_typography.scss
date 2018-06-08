@@ -1,0 +1,174 @@
+//
+// Typography
+// --------------------------------------------------
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, img, form, hr, address, .alert, .table, .btn, .link {
+    margin: 0;
+    margin-top: 25px;
+
+    &:first-child, &.no-gap {
+        margin-top: 0;
+    }
+
+    @include breakpoint('small') {
+        margin-top: 15px;
+    }
+}
+
+h1, h2, h3, h4, p, a {
+    -ms-word-wrap: break-word;
+        word-wrap: break-word;
+}
+
+// Body text
+// -------------------------
+
+p {
+    font-family: $font-serif;
+    color: $black;
+    line-height: 1.588em;
+    font-size: $font-size-base;
+    font-weight: $light;
+    margin: 0;
+
+    strong {
+        font-weight: $bold;
+    }
+
+    small {
+        font-size: $font-size-small;
+    }
+
+    b {
+        font-weight: $bold;
+    }
+
+    i, em {
+        font-style: italic;
+    }
+}
+
+// Headings
+// -------------------------
+
+h1, .h1 {
+    font-family: $font-heading;
+    font-size: $font-size-h1;
+    color: $black;
+    line-height: 2.588em;
+    font-weight: $semibold;
+}
+
+h2, .h2 {
+    font-family: $font-heading;
+    font-size: $font-size-h2;
+    line-height: 2.118em;
+    font-weight: $semibold;
+}
+
+
+h3, .h3 {
+    font-family: $font-heading;
+    font-size: $font-size-h3;
+    color: $white;
+    line-height: 1.941em;
+    font-weight: $semibold;
+}
+
+h4, .h4 {
+    font-family: $font-heading;
+    font-size: $font-size-h4;
+    color: $black;
+    line-height: 1.941em;
+    font-weight: $semibold;
+}
+
+h5, .h5 {
+    font-family: $font-heading;
+    font-size: $font-size-h5;
+    color: $brand;
+    line-height: 1.375em;
+    font-weight: $semibold;
+}
+
+h6, .h6 {
+    font-family: $font-sans-serif;
+    font-size: $font-size-h6;
+    color: $black;
+    line-height: 1.2;
+    font-weight: $normal;
+}
+
+// List
+// -------------------------
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    padding-left: 15px;
+
+    li {
+        line-height: 1.6;
+        color: $white;
+    }
+}
+
+.list-inline {
+    padding-left: 0;
+    list-style: none;
+
+    & > li {
+        display: inline-block;
+        padding: 0 5px;
+
+        &:first-child {
+            padding-left: 0;
+        }
+    }
+}
+
+.list-unstyled {
+    padding: 0;
+    list-style-type: none;
+}
+
+// Font style
+// -------------------------
+
+.bold {
+    font-weight: $bold;
+}
+
+.underline {
+    display: inline;
+	text-decoration: none;
+	background-image: linear-gradient(to bottom, rgba(0,0,0,0) 50%, currentColor 50%);
+	background-position: 0 95%;
+	background-repeat: no-repeat;
+	background-size: 100% 0.12em;
+	padding-bottom: 0.1em;
+	/*text-shadow: 6px -1px 0 #fff, -6px -1px 0 #fff, -6px -2px 0 #fff;*/
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+// Others styles
+// -------------------------
+
+address {
+    font-style: $normal;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}

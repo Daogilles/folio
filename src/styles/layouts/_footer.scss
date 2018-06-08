@@ -1,0 +1,22 @@
+//
+// Footer
+// --------------------------------------------------
+
+.footer {
+    position: fixed;
+    bottom: 3%;
+    left: 3%;
+    z-index: 999;
+    &__description {
+        p {
+            color: $black;
+            line-height: 120%;
+
+            &.title {
+                display: block;
+                font-size: $font-size-h4;
+                font-weight: $semibold;
+            }
+        }
+    }
+}

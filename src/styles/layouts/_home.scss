@@ -1,0 +1,18 @@
+//
+// Home page
+// ------------------------------------------------
+#page-home {
+	height: 100vh;
+	width: 100vw;
+}
+
+.home {
+	height: 100vh;
+	width: 100vw;
+	overflow-x: hidden;
+
+	&__wrapper {
+		height: 100%;
+		width: 100%;
+	}
+}

@@ -1,0 +1,23 @@
+//
+// Projects
+// --------------------------------------------------
+
+.description {
+    max-width: 60%;
+
+    .bold {
+        margin-top: 10px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li::before {
+        content: "-";
+        color: $black;
+        padding-right: 10px;
+    }
+}

@@ -1,0 +1,32 @@
+// cubic
+$easeInCubic: cubic-bezier(.550, .055, .675, .190);
+$easeOutCubic: cubic-bezier(.215, .610, .355, 1.000);
+$easeInOutCubic: cubic-bezier(.645, .045, .355, 1.000);
+// circ
+$easeInCirc: cubic-bezier(.600, .040, .980, .335);
+$easeOutCirc: cubic-bezier(.075, .820, .165, 1.000);
+$easeInOutCirc: cubic-bezier(.785, .135, .150, .860);
+// expo
+$easeInExpo: cubic-bezier(.950, .050, .795, .035);
+$easeOutExpo: cubic-bezier(.190, 1.000, .220, 1.000);
+$easeInOutExpo: cubic-bezier(1.000, .000, .000, 1.000);
+// quad
+$easeInQuad: cubic-bezier(.550, .085, .680, .530);
+$easeOutQuad: cubic-bezier(.250, .460, .450, .940);
+$easeInOutQuad: cubic-bezier(.455, .030, .515, .955);
+// quart
+$easeInQuart: cubic-bezier(.895, .030, .685, .220);
+$easeOutQuart: cubic-bezier(.165, .840, .440, 1.000);
+$easeInOutQuart: cubic-bezier(.770, .000, .175, 1.000);
+// quint
+$easeInQuint: cubic-bezier(.755, .050, .855, .060);
+$easeOutQuint: cubic-bezier(.230, 1.000, .320, 1.000);
+$easeInOutQuint: cubic-bezier(.860, .000, .070, 1.000);
+// sine
+$easeInSine: cubic-bezier(.470, .000, .745, .715);
+$easeOutSine: cubic-bezier(.390, .575, .565, 1.000);
+$easeInOutSine: cubic-bezier(.445, .050, .550, .950);
+// back
+$easeInBack: cubic-bezier(.600, -.280, .735, .045);
+$easeOutBack: cubic-bezier(.175, .885, .320, 1.275);
+$easeInOutBack: cubic-bezier(.680, -.550, .265, 1.550);

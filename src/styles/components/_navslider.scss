@@ -1,0 +1,25 @@
+//
+// NAV SLIDER
+// --------------------------------------------------
+#slider__nav {
+    bottom: 3%;
+    position: absolute;
+    right: 5%;
+    z-index: 99;
+
+    span {
+        background-color: $darkgray;
+        display: inline-block;
+        height: 1px;
+        width: 40px;
+        margin: 0 5px;
+        line-height: normal;
+        vertical-align: middle;
+    }
+
+    p {
+        display: inline-block;
+        line-height: normal;
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,45 @@
+//
+// Header
+// --------------------------------------------------
+
+header {
+    position: relative;
+    z-index: 9999;
+
+    #name {
+        color: $black;
+        left: 3%;
+        top: 20px;
+        position: absolute;
+        font-size: $font-size-h4;
+
+        transition: color 0.2s;
+
+        &:hover {
+            color: $orange;
+        }
+    }
+
+    nav {
+        &.menu {
+            top: 20px;
+            right: 3%;
+            position: absolute;
+
+            a {
+                color: $black;
+                font-size: $font-size-h4;
+
+                transition: color 0.2s;
+
+                + a {
+                    margin-left: 20px;
+                }
+
+                &:hover {
+                    color: $orange;
+                }
+            }
+        }
+    }
+}

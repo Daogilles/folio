@@ -1,0 +1,177 @@
+//
+// Home Case
+// -------------------------------------------------
+.kenzo {
+    .slide {
+        &__content {
+            height: 80%;
+            top: 10%;
+        }
+        &__brand {
+            position: relative;
+            height: 50%;
+            width: 90%;
+            left: 5%;
+            top: 20%;
+            z-index: 4;
+
+            span {
+                background-color: $blue-light;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            #kenzok {
+                position: absolute;
+                right: 10%;
+                height: 80%;
+                top: 10%;
+            }
+        }
+        &__background {
+            position: absolute;
+            z-index: 1;
+            height: 60%;
+            width: 96%;
+            top: 15%;
+        }
+        &__title {
+            left: 40%;
+            top: 5%;
+        }
+        &__icon {
+            bottom: 5%;
+            left: -10%;
+            position: absolute;
+            z-index: 5;
+        }
+        &__deco {
+            top: initial;
+            bottom: 2em;
+            right: -0.25em;
+        }
+    }
+}
+
+.carlsberg {
+    .slide {
+        &__title {
+            left: 40%;
+            top: 10%;
+        }
+        &__brand {
+            position: relative;
+            height: 70%;
+            width: 50%;
+            left: 40%;
+            top: 30%;
+            z-index: 4;
+
+            img {
+                bottom: -5%;
+                height: 100%;
+                width: auto;
+            }
+        }
+        &__background {
+            position: absolute;
+            height: 80%;
+            width: 100%;
+            left: 0;
+            top: 20%;
+            z-index: 1;
+        }
+        &__deco {
+    		font-size: 7rem;
+    		top: 2.75em;
+    		right: 0.4em;
+    	}
+        &__icon {
+            bottom: 0;
+            left: 30%;
+            position: absolute;
+            z-index: 5;
+            height: 40%;
+            width: 30%;
+
+            img {
+                bottom: -5%;
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+}
+
+.lolita {
+    .slide {
+        &__title {
+            left: 30%;
+        }
+
+        &__brand {
+            // background-color: $lolita-red;
+            position: relative;
+            height: 50%;
+            width: 50%;
+            left: 25%;
+            top: 40%;
+            z-index: 4;
+        }
+
+        &__icon {
+            bottom: 5%;
+            left: 0;
+            position: absolute;
+            z-index: 5;
+            height: auto;
+            width: 100%;
+        }
+    	&__background {
+            position: absolute;
+            height: auto;
+            width: 100%;
+            // left: 25%;
+            top: 35%;
+            z-index: 1;
+
+            // border-radius: 40%;
+            // background-color: $lolita-red;
+            // -webkit-filter: blur(80px);
+            // -moz-filter: blur(80px);
+            // -o-filter: blur(80px);
+            // -ms-filter: blur(80px);
+            // filter: blur(80px);
+        }
+        &__deco {
+            img {
+                width: 60%;
+            }
+        }
+        &__text {
+            img {
+                width: 80%;
+            }
+        }
+    }
+    &.active {
+        .slide__title {
+            left: 0;
+        }
+    }
+}
+
+.msf {
+	&__morph {
+		height: 100%;
+		width: 100%;
+
+		.morph {
+			position: relative;
+			height: 100%;
+			width: 130%;
+		}
+	}
+}
